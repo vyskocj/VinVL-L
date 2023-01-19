@@ -1,0 +1,3 @@
+[submodule "Oscar"]
+	path = Oscar
+	url = https://github.com/microsoft/Oscar
