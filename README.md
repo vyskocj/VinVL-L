@@ -132,13 +132,15 @@ _#2: The listed results are on the <a href="https://cs.stanford.edu/people/dorar
 
 ## Usage
 
-Follow [Oscar's instructions](./Oscar/INSTALL.md) for installation and download their data for GQA dataset
-([Oscar](./Oscar/DOWNLOAD.md)/[VinVL](./Oscar/VinVL_DOWNLOAD.md)).
+Follow [Oscar's instructions](https://github.com/microsoft/Oscar/blob/4788a7425cd0f9861ea80fed79528abbb72eb169/INSTALL.md)
+for installation and download their data for GQA dataset
+([Oscar](https://github.com/microsoft/Oscar/blob/4788a7425cd0f9861ea80fed79528abbb72eb169/DOWNLOAD.md#datasets)/[VinVL](https://github.com/microsoft/Oscar/blob/4788a7425cd0f9861ea80fed79528abbb72eb169//VinVL_DOWNLOAD.md#datasets)).
 Additionally, you will need the [Timm library](https://github.com/rwightman/pytorch-image-models) in case of using our
 Swin-B model, and `h5py` if you want to use the scene features.
 
-To run VinVL+L script, you can follow the [original usage (see section GQA)](./Oscar/VinVL_MODEL_ZOO.md); you must type
-`python run_gqa_places.py`, then continue in using the same arguments and consider using the following ones:
+To run VinVL+L script, you can follow the [original usage (see section GQA)](https://github.com/microsoft/Oscar/blob/4788a7425cd0f9861ea80fed79528abbb72eb169/VinVL_MODEL_ZOO.md#gqa);
+you must type `python run_gqa_places.py`, then continue in using the same arguments and consider using the following
+ones:
 - `--wandb_entity "name"` in case you want to log your run in [WandB](https://wandb.ai/site), where `"name"` refers to
   your profile name. Do not forget that you will need to login during the first run via console.
 - `--places_io_json "path_to_io_json"` to use indoors/outdoors (IO) scene tags.
@@ -192,7 +194,7 @@ The same applies to scene features stored in hdf5, only the value will be a 2054
   <details>
     <summary>Fix</summary>
     
-    in [`./Oscar/oscar/modeling/modeling_bert.py`](./Oscar/oscar/modeling/modeling_bert.py) rewrite line 225 from:
+    in [`./Oscar/oscar/modeling/modeling_bert.py`](https://github.com/microsoft/Oscar/blob/4788a7425cd0f9861ea80fed79528abbb72eb169/oscar/modeling/modeling_bert.py#L225) rewrite line 225 from:
     
     ```python
     extended_attention_mask = extended_attention_mask.to(dtype=next(self.parameters()).dtype) # fp16 compatibility
