@@ -256,3 +256,6 @@ Please consider citing the following paper in case you use this code or provided
   address   = {Krems an der Donau, Austria},
 }
 ```
+
+## License
+VinVL+L is released under the MIT license. See [LICENSE](LICENSE) for details.
