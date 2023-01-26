@@ -1,3 +1,5 @@
+# Copyright (c) 2023 vyskocj. Licensed under the MIT license.
+
 import re
 import json
 import tqdm
