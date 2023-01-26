@@ -1,4 +1,4 @@
-# Copyright (c) 2020 Microsoft Corporation. Licensed under the MIT license.
+# Copyright (c) 2023 vyskocj. Licensed under the MIT license.
 
 from __future__ import absolute_import, division, print_function
 
